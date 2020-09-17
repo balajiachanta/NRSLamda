@@ -18,7 +18,7 @@ public class NrsLamdaApplication {
 
 	@Bean
 	public Function<String, String> addHello() {
-
+		//curl localhost:8080/addHello -H "Content-Type: text/plain" -d "balu"
 		return s -> s.concat("hello");
 
 	}
